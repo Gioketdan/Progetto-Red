@@ -1,0 +1,254 @@
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+
+    font-family: 'Nova Square';
+    color: darkred;
+
+}
+
+/* NAVBAR INDEX */
+.img_navbar{
+    height: 150px;
+    width: 250px;
+}
+
+.ul_navbar{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.a_decoration{
+    text-decoration: none;
+}
+
+/* PRIMA IMMAGINE MONTAGNA */
+.col_header{
+    /* position: relative; */
+    display: flex;
+    background-image: linear-gradient( rgba(255,255,255,1), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(./Media/switzerland-862870_1920.jpg);
+    height: 900px;
+    background-position: bottom;
+    width: 100%;
+    background-repeat: no-repeat;
+    justify-content: center;    
+    align-items: flex-end;
+}
+
+.img2_header{
+    display: flex;
+    height: 60%;
+    width: 100%;
+    position: absolute;
+}
+
+.h1_index{
+    margin-bottom: 450px;
+    font-size: 150px;
+    font-family: 'Nova Square';
+    color: darkred;
+    letter-spacing: 80px;
+}
+
+.h1_index2{
+    margin-bottom: 600px;
+    font-size: 50px;
+    font-family: 'Nova Square';
+    color: darkred;
+    letter-spacing: 50px;
+}
+
+/* MAIN + BODY */
+.articolo_1{
+    text-align: center;
+    justify-content: center;
+    font-family: 'Rajdhani', sans-serif;
+    font-style: oblique;
+    font-size: 20px;
+    margin-top: 100px;
+}
+
+/* TIMELINE */
+/* <i class="fa-solid fa-snowflake"></i> NEVE
+ <i class="fa-solid fa-mountain"></i> MONTAGNA
+<i class="fa-solid fa-map"></i> MAPPA
+<i class="fa-sharp fa-solid fa-campground"></i> TENDA */
+
+.section_timeline{
+    margin-top: 150px;
+    margin-bottom: 100px;
+    justify-content: space-evenly;
+}
+
+.div_timeline{
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: solid;
+    font-family: 'Nova Square';
+    color: darkred;
+    /* margin: 100px; */
+    width: 300px;
+}
+
+/* PALLINI TIMELINE */
+
+.pseudo_bottom{
+    margin-top: 30px;
+    position: relative;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.pseudo_bottom::after{
+    content: "";
+    position: absolute;
+    right: 62px;
+    top: 34px;
+    height: 16px;
+    width: 16px;
+    border: 2px solid;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+/* PARAGRAFI SX E DX */
+.row_paragrafi{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Nova Square';
+}
+.col_sx{
+    text-align: left;
+    font-family: 'Nova Square';
+}
+.col_dx{
+    text-align: right;
+}
+
+/* BOTTONE CENTRALE */
+.row_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px;
+}
+.button{
+    display: flex;
+    color: white;
+    text-align: center;
+    width: 200px;
+    justify-content: center;
+    background-color: darkred;
+    padding: 10px;
+}
+
+/* TIMELINE VERTICALE */
+.row_TLverticale{
+    background-image: url(./Media/trees.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 800px;
+    background-color: rgba(0, 0, 0, 0.1);
+    /* background-color: red; */
+}
+.div_timeline_verticale{
+    position: relative;
+    margin-left: 70px;
+    border-left: solid darkred;
+    padding: 20px;
+}
+.div_timeline_verticale::before{
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border: 2px solid darkred;
+    border-radius: 50%;
+    top: 23px;
+    left: -12px;
+    background-color: white;
+}
+
+/* SEZIONE 4 IMMAGINETTE TONDE */
+.div_1_4img{
+    display: flex;
+    padding: 50px;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.articoli_rotondi{ 
+    align-items: center;
+    margin-top: -100px;
+    text-align: center;
+}
+.img_pallina{
+   display: flex;
+   border: solid 2px darkred;
+   border-radius: 50%;
+   margin: 50px;
+   margin-bottom: 20px;
+   margin-top: 100px;
+   height: 200px;
+   width: 200px;
+   padding: 10px;
+}
+.fa-brands{
+    margin: 10px;
+    color: darkred;
+    margin-bottom: 100px;
+}
+.row_4_palline p{
+    margin-bottom: 1px;
+}
+
+/* ULTIMO PARAGRAFO */
+.row_ultimoParagrafo{
+    display: flex;
+}
+.img_ultimoPar{
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    border: 2px solid darkred;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 50px;
+    align-items: center;
+}
+
+@media screen and (max-width: 400px) {
+    .col_foto{
+        order: 1;
+    }
+}
+
+/* FOOTER */
+.img_footer{
+    width: 100%;
+}
+.col_footer h3{
+    color: white;
+}
+.col_footer h5{
+    color: white;
+}
+.col_footer p{
+    color: white;
+}
+/* LISTA FOOTER */
+.a_footer{
+    text-decoration: none;
+}
+.li_footer{
+    margin-left: 30px;
+    color: white;
+}
+.div2_footer h3{
+    color: white;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.color_row{
+    background-color: darkred;
+}
